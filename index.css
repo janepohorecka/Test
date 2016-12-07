@@ -1,0 +1,143 @@
+<style>
+
+*,html,body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+header {
+  height: 51px;
+  border-bottom: 1px solid #e7e7e7;
+}
+
+.flex-container {
+  max-width: 970px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 52px;
+}
+
+#header-title {
+  margin-left: 3%;
+}
+
+h1 a, li a{
+  text-decoration: none;
+  color: black;
+}
+
+.flex-container ul {
+  display: flex;
+}
+
+li {
+  padding: 15px;
+}
+
+ul li a:hover {
+  color: tomato;
+  transition: 0.3s;
+}
+
+
+ul li.icon {
+  display: none;
+}
+
+
+
+
+/*nav {
+  display: flex;
+  justify-content: space-between;
+  text-decoration: none;
+  flex: 1;
+}*/
+
+.one {
+  height: 200px;
+  max-width: 100%;
+  background-image: url(write.jpg);
+  background-size: cover;
+  padding: 20% 25% 5% 10%;
+  color: white;
+  top: 0;
+}
+
+.one p {
+  max-width: 600px;
+}
+
+#square {
+  background-color: #FFCC00;
+  width: 200px;
+	height: 50px;
+  color: black;
+  border-radius: 10px;
+  display: flex;
+}
+
+.one a {
+  background-color: #FFCC00;
+  border-radius: 10%;
+  text-decoration: none;
+  flex-grow: 1;
+}
+
+.two {
+  /*height: 300px;*/
+  max-width: 100%;
+  background-color: #FFCC00;
+  /*overflow: hidden;*/
+  padding: 5% 10% 5% 10%;
+  overflow: auto;
+  font-size: 20px;
+
+}
+
+.two p {
+  padding: 2% 0% 0% 0%;
+}
+
+
+
+/* NAV BAR ---- When the screen is less than 680 pixels wide, hide all list items, except for the first one ("Home"). Show the list item that contains the link to open and close the topnav (li.icon) */
+
+@media screen and (max-width:880px) {
+  ul.topnav li {
+    display: none;
+  }
+  ul.topnav li.icon {
+    float: right;
+    display: inline-block;
+  }
+  ul.topnav.responsive {
+    position: relative;
+  }
+  ul.topnav.responsive li.icon {
+   position: absolute;
+   right: 0;
+   top: 0;
+ }
+ ul.topnav.responsive li {
+   float: none;
+   display: inline;
+ }
+ ul.topnav.responsive li a {
+   display: block;
+   text-align: left;
+ }
+}
+
+
+
+
+
+</style>
