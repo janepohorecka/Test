@@ -240,17 +240,19 @@ li.icon {
     float: right;
     display: inline-block;
   }
+
   ul.topnav.responsive {
     position: relative;
     flex-direction: column;
     background: red;
     width: 100%;
-    margin-top: 300px;
+    margin-top: 295px;
   }
 
-  /*#header-title {
-    display: none;
-  }*/
+  #header-title {
+    position: absolute;
+    top: -10px;
+  }
   ul.topnav.responsive li.icon {
    position: absolute;
    right: 0;
