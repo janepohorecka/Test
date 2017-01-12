@@ -331,7 +331,7 @@ li.icon {
   ul.topnav.responsive {
     position: relative;
     flex-direction: column;
-    background: red;
+    background: white;
     width: 100%;
     margin-top: 305px;
   }
