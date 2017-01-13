@@ -120,7 +120,7 @@ li.icon {
   font-family: Roboto;
   font-size: 18px;
   font-weight: bold;
-  font-style: normal;
+  /*font-style: normal;*/
   font-stretch: normal;
   line-height: 1.5;
   color: #000000;
@@ -147,11 +147,11 @@ li.icon {
   font-size: 20px;
 }
 
-.two p, .four p, .six p, .eight p, .nine p, .eleven p {
+.two p, .four p, .five p, .six p, .seven p, .eight p, .nine p, .ten p, .eleven p {
   padding: 2% 0% 0% 0%;
   max-width: 833px;
   font-family: 'Roboto';
-  font-size: 24px;
+  font-size: 18px;
   line-height: 36px;
 }
 
@@ -242,64 +242,80 @@ h3{
   padding: 5% 10% 5% 10%;
   overflow: auto;
   font-size: 20px;
+  /*display: flex;*/
+}
+
+.seven img {
+  max-width: 200px;
+  max-height: 257px;
+  /*align-items: center;
+  justify-content: center;*/
+
 }
 
 .eight {
   height: auto;
-  background-image: url(desk.jpg);
+  background-image: url(couch.jpg);
   background-size: cover;
   max-width: 100%;
   color: white;
   padding: 5% 10% 5% 10%;
   overflow: auto;
   font-size: 20px;
+  z-index: -1;
 }
+
 .eight p{
   max-width: 550px;
 }
 
       form {
-      max-width:420px;
+      max-width:550px;
       width: calc(100% - 2rem);
       /*margin:50px auto;*/
-      margin: 0 auto;
+      /*padding: 5% 10% 5% 10%;*/
+      padding-top: 2%;
+      /*margin: 0 auto;*/
       }
 
       .feedback-input {
       color: #4c4c4c;
       font-family: 'Roboto', sans-serif;
-      font-weight:500;
-      font-size: 14px;
-      border-radius: 2px;
-      line-height: 22px;
-      background-color: white;
-      border:1px solid #4c4c4c;
+      /*font-weight: bold;*/
+      font-size: 18px;
+      border-radius: 5px;
+      line-height: 32px;
+      background-color: #eeeeee;
+      border: solid 1px #d2d2d2;
       transition: all 0.3s;
-      padding: 10px;
-      margin-bottom: 12px;
+      /*padding: 400px;*/
+      margin-bottom: 22px;
       width:100%;
       box-sizing: border-box;
       outline:0;
+      padding: 2%;
 
       }
 
-      .feedback-input:focus { border:1px solid tomato
-      ; }
+      .feedback-input:focus {
+        border: solid 1px #d2d2d2;
+       }
+
 
       textarea {
-      height: 150px;
+      height: 132px;
       line-height: 150%;
       resize:vertical;
       }
 
       [type="submit"] {
       font-family: 'Roboto', sans-serif;
-      width: 100%;
-      background:#4c4c4c;
+      width: 50%;
+      background:#fdcd2f;
       border-radius:2px;
       border:0;
       cursor:pointer;
-      color:white;
+      color:black;
       font-size:18px;
       padding-top:10px;
       padding-bottom:10px;
@@ -307,12 +323,14 @@ h3{
       margin-top:-4px;
       font-weight:700;
       margin-bottom: 50px;
+      line-height: 32px;
       }
-      [type="submit"]:hover { background:tomato; }
+      [type="submit"]:hover { background:tomato;
+      color: white;}
 
 
 .nine {
-  background-color: #666676;
+  background-color: #242c32;
   height: auto;
   max-width: 50%;
   padding: 5% 10% 5% 10%;
@@ -322,12 +340,26 @@ h3{
 }
 
 .ten {
-  background-color: #323248;
+  background-color: #14181b;
   color: white;
   width: 10%;
   padding: 5% 10% 5% 10%;
   overflow: auto;
   font-size: 20px;
+  text-align: center;
+  /*display: flex;*/
+}
+
+.ten img {
+  max-width: 233px;
+  /*flex: auto;*/
+}
+
+.circle {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: red;
 }
 
 .eleven {
