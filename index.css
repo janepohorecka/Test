@@ -575,6 +575,7 @@ h3{
   #header-title {
   position: absolute;
   margin-top: 0px;
+  color: black;
   }
   ul.topnav.responsive li.icon {
    position: absolute;
