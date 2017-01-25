@@ -566,9 +566,10 @@ h3{
   ul.topnav.responsive {
     position: relative;
     flex-direction: column;
-    background: white;
+    background-color: rgba(255,255,255,0.8);
+    /*opacity: 30%;*/
     width: 100%;
-    margin-top: 305px;
+    margin-top: 370px;
   }
 
   #header-title {
