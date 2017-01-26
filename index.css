@@ -19,20 +19,106 @@ body {
   width: 100%;
 }
 
+
+a{
+  text-decoration: none;
+  color: #fff;
+}
+
+img {
+  max-width: 100%;
+}
+
+.row {
+  display: flex;
+}
+
+.split {
+  justify-content: space-between;
+}
+
+.bottom {
+  align-items: flex-end;
+}
+
+.y-center {
+  align-items: center;
+}
+
 header {
+  padding: 8px 5%;
+  user-select: none;
+}
+
+.logo img {
+  height: 50px;
+}
+
+.logo h2 {
+  font-size: 1.8em;
+  color: white;
+}
+
+header .fa {
+  font-size: 1.3em;
+  display: none;
+  cursor: pointer;
+}
+
+header nav a {
+  padding-top: 15px;
+  font-family: 'Roboto';
+}
+
+header nav a:not(:last-child) {
+  margin-right: 15px;
+}
+
+@media (max-width: 875px) {
+  header .fa {
+    display: block;
+    visibility: visible;
+  }
+
+  header nav {
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 80px;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    background: #777;
+    padding: 20px 0;
+    opacity: 0;
+    visibility: hidden;
+  }
+
+  header nav a {
+    margin: 0 0 8px;
+    font-size: 1.3em;
+  }
+
+.row a {
+  list-style-type:none;
+}
+
+  header nav.show {
+    opacity: 1;
+    visibility: visible;
+    transition: opacity .3s, visibility .3s;
+  }
+}
+
+/*header {
   height: 51px;
-  /*border-bottom: 1px solid #e7e7e7;*/
-  /*position: fixed;*/
-  /*background-color: transparent;*/
 }
 
 .flex-container {
-  /*max-width: 1000px;*/
-  /*margin: 0 auto;*/
+
   display: flex;
   justify-content: space-between;
   align-items: center;
-  /*justify-content: flex-start;*/
   flex-direction: row;
   height: 52px;
   padding-top: 20px;
@@ -46,7 +132,6 @@ header {
   font-style: normal;
   font-stretch: normal;
   text-decoration: none;
-  /*background-color: red;*/
 }
 
 .topnav {
@@ -60,7 +145,7 @@ header {
 
 #header-title p {
   text-decoration: none;
-}
+}*/
 
 h1 {
   font-family: 'Oswald', sans-serif;
@@ -74,7 +159,12 @@ h1 a, li a{
   color: white;
 }
 
-.flex-container ul {
+h2{
+  font-size: 24px;
+  font-family: 'Oswald', sans-serif;
+}
+
+/*.flex-container ul {
   display: flex;
   list-style-type:none;
   font-family: Roboto;
@@ -85,13 +175,13 @@ h1 a, li a{
   text-align: center;
   color: #ffffff;
   padding-top: 10px;
-}
+}*/
 
-li {
+/*li {
   padding: 20px;
-}
+}*/
 
-ul li a:hover {
+/*ul li a:hover {
   color: #fdcd2f;
   transition: 0.3s;
 }
@@ -100,7 +190,7 @@ ul li a:hover {
 li.icon {
   display: none;
 }
-
+*/
 .one {
   height: auto;
   max-width: 100%;
@@ -556,7 +646,7 @@ h3{
 /* NAV BAR ---- When the screen is less than 680 pixels wide, hide all list items, except for the first one ("Home"). Show the list item that contains the link to open and close the topnav (li.icon) */
 
 @media screen and (max-width:1100px) {
-  ul.topnav li {
+  /*ul.topnav li {
     display: none;
   }
    li.icon {
@@ -567,7 +657,6 @@ h3{
     position: relative;
     flex-direction: column;
     background-color: rgba(255,255,255,0.8);
-    /*opacity: 30%;*/
     width: 100%;
     margin-top: 370px;
   }
@@ -575,7 +664,6 @@ h3{
   #header-title {
   position: absolute;
   margin-top: 0px;
-  color: black;
   }
   ul.topnav.responsive li.icon {
    position: absolute;
@@ -589,7 +677,7 @@ h3{
  ul.topnav.responsive li a {
    display: block;
    text-align: center;
- }
+ }*/
 
  .three-three {
    width: 100%;

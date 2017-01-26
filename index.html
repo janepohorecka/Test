@@ -41,17 +41,17 @@
 
   <div class="one">
 
-    <header>
+    <!-- <header>
       <div class="flex-container">
         <h1 id="header-title">
           <img src="logo.svg">
           <a href="#"> Test Northwest</a>
         </h1>
         <ul class="topnav" id="nav">
-          <!-- <h1 id="header-title">
+          <h1 id="header-title">
             <img src="logo.svg">
             <a href="#"> Test Northwest</a>
-          </h1> -->
+          </h1>
           <li><a href="#">Welcome</a></li>
           <li><a href="#">LD Screening</a></li>
           <li><a href="#">ADHD Screening</a></li>
@@ -67,8 +67,23 @@
         </li>
 
       </div>
-    </header>
+    </header> -->
 
+
+    <header class="row split y-center">
+      <div class="logo row bottom">
+        <img src="https://janepohorecka.github.io/Test-Northwest/logo.svg" alt="">
+        <h2>Test Northwest</h2>
+      </div>
+      <nav class="row">
+        <a href="#">Welcome</a>
+        <a href="#">LD Screening</a>
+        <a href="#">ADHD Screening</a>
+        <a href="#">Appointments</a>
+        <a href="#">About</a>
+      </nav>
+      <i class="fa fa-navicon"></i>
+    </header>
 
     <div class="one-text">
       <h1>
@@ -190,7 +205,7 @@
     <!-- </div> -->
   </div>
 
-    <script>
+    <!-- <script>
     /* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
 function myFunction() {
     var x = document.getElementById("nav");
@@ -200,6 +215,17 @@ function myFunction() {
         x.className = "topnav";
     }
 }
+    </script> -->
+
+    <script src="https://code.jquery.com/jquery-3.1.0.js"></script>
+    <script>
+    $(document).ready(function() {
+
+    $('header .fa').on('click', function()
+    { $('header nav').toggle();
+    });
+
+    });
     </script>
 
 
