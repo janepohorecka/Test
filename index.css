@@ -38,7 +38,7 @@ img {
 }
 
 .bottom {
-  align-items: flex-end;
+  align-items: center;
 }
 
 .y-center {
@@ -46,16 +46,22 @@ img {
 }
 
 header {
-  padding: 8px 5%;
+  padding: 16px 5% 8px 0;
+  margin-left: 10%;
   user-select: none;
+  max-width: 1300px;
+  top: 0;
+  /*background-color: red;*/
 }
 
 .logo img {
-  height: 50px;
+  max-height: 68px;
+  padding-right: 15px;
+
 }
 
 .logo h2 {
-  font-size: 1.8em;
+  font-size: 24px;
   color: white;
 }
 
@@ -68,23 +74,28 @@ header .fa {
 header nav a {
   padding-top: 15px;
   font-family: 'Roboto';
+  font-weight: bold;
+  font-size: 18px;
+  padding: 10px;
 }
 
 header nav a:not(:last-child) {
   margin-right: 15px;
 }
 
-@media (max-width: 875px) {
+@media (max-width: 1000px) {
+
+
   header .fa {
     display: block;
-    visibility: visible;
+    color: white;
   }
 
   header nav {
     flex-direction: column;
     align-items: center;
     position: absolute;
-    top: 80px;
+    top: 90px;
     left: 0;
     z-index: 1;
     width: 100%;
@@ -162,6 +173,7 @@ h1 a, li a{
 h2{
   font-size: 24px;
   font-family: 'Oswald', sans-serif;
+  /*margin-left: 10%;*/
 }
 
 /*.flex-container ul {

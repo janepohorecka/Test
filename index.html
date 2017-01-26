@@ -10,6 +10,7 @@
     <meta name="keywords" content="Psychology, Testing, Kids, LD Screening, ADHD Screening, Seattle, Washington">
     <link rel="stylesheet" type="text/css" href="index.css">
     <link rel="stylesheet" type="text/css" href="reset.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css?family=Oswald|Roboto:400,700" rel="stylesheet">
 
       </head>
@@ -219,13 +220,11 @@ function myFunction() {
 
     <script src="https://code.jquery.com/jquery-3.1.0.js"></script>
     <script>
-    $(document).ready(function() {
+    // $(document).ready(function() {
 
-    $('header .fa').on('click', function()
-    { $('header nav').toggle();
-    });
-
-    });
+      $('header .fa').on('click', function() {
+        $('header nav').toggleClass('show');
+      });
     </script>
 
 
