@@ -23,6 +23,11 @@ body {
 a{
   text-decoration: none;
   color: #fff;
+  transition: .3s;
+}
+
+a:hover {
+  color: #fdcd2f;
 }
 
 img {
@@ -99,7 +104,7 @@ header nav a:not(:last-child) {
   margin-right: 15px;
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 1100px) {
 
 
   header .fa {
@@ -111,7 +116,7 @@ header nav a:not(:last-child) {
     flex-direction: column;
     align-items: center;
     position: absolute;
-    top: 90px;
+    top: 92px;
     left: 0;
     z-index: 1;
     width: 100%;
@@ -137,43 +142,6 @@ header nav a:not(:last-child) {
   }
 }
 
-/*header {
-  height: 51px;
-}
-
-.flex-container {
-
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-direction: row;
-  height: 52px;
-  padding-top: 20px;
-}
-
-#header-title {
-  margin-left: 10%;
-  font-family: 'Oswald', sans-serif;
-  font-size: 29px;
-  font-weight: bold;
-  font-style: normal;
-  font-stretch: normal;
-  text-decoration: none;
-}
-
-.topnav {
-  padding-right: 5%;
-}
-
-#header-title img {
-  max-height: 44px;
-  padding-right: 15px;
-}
-
-#header-title p {
-  text-decoration: none;
-}*/
-
 h1 {
   font-family: 'Oswald', sans-serif;
   font-size: 48px;
@@ -189,36 +157,8 @@ h1 a, li a{
 h2{
   font-size: 24px;
   font-family: 'Oswald', sans-serif;
-  /*margin-left: 10%;*/
 }
 
-/*.flex-container ul {
-  display: flex;
-  list-style-type:none;
-  font-family: Roboto;
-  font-size: 18px;
-  font-weight: bold;
-  font-style: normal;
-  font-stretch: normal;
-  text-align: center;
-  color: #ffffff;
-  padding-top: 10px;
-}*/
-
-/*li {
-  padding: 20px;
-}*/
-
-/*ul li a:hover {
-  color: #fdcd2f;
-  transition: 0.3s;
-}
-
-
-li.icon {
-  display: none;
-}
-*/
 .one {
   height: auto;
   max-width: 100%;
@@ -229,7 +169,6 @@ li.icon {
 .one-text {
   padding: 10% 25% 5% 10%;
   color: white;
-  /*top: 0;*/
   overflow: auto;
 }
 
@@ -248,7 +187,6 @@ li.icon {
   font-family: Roboto;
   font-size: 18px;
   font-weight: bold;
-  /*font-style: normal;*/
   font-stretch: normal;
   line-height: 1.5;
   color: #000000;
@@ -292,7 +230,6 @@ li.icon {
   flex-wrap:wrap;
   flex-direction: row;
   padding: 8% 0 8% 0;
-  /*text-align: center;*/
 }
 
 .three-three {
@@ -309,7 +246,7 @@ li.icon {
 
   display: -webkit-flex;
 display: flex;
--webkit-flex-direction: column; /* works with row or column */
+-webkit-flex-direction: column;
 flex-direction: column;
 -webkit-align-items: center;
 align-items: center;
@@ -342,8 +279,6 @@ align-items: center;
 }
 
 .three-three p {
-  /*-webkit-justify-content: flex-end;
-  justify-content: flex-end;*/
   text-align: center;
   justify-content: center;
   line-height: 27px;
@@ -365,7 +300,6 @@ h3{
  line-height: 1.5;
  color: #ffffff;
 
-  /*margin: auto;*/
 }
 
 .four {
@@ -401,6 +335,8 @@ h3{
 
 .five a p {
   color: white;
+  text-align: center;
+
 }
 
 .five a p:hover {
@@ -461,6 +397,11 @@ h3{
   align-content: center;
 }
 
+.seven a p {
+  color: black;
+  text-align: center;
+}
+
 .seven a p:hover {
     color: #2F5FFD;
     transition: .3s;
@@ -474,9 +415,6 @@ h3{
 .seven img {
   max-width: 200px;
   max-height: 257px;
-  /*align-items: center;
-  justify-content: center;*/
-
 }
 
 .eight {
@@ -498,29 +436,23 @@ h3{
       form {
       max-width:550px;
       width: calc(100% - 2rem);
-      /*margin:50px auto;*/
-      /*padding: 5% 10% 5% 10%;*/
       padding-top: 2%;
-      /*margin: 0 auto;*/
       }
 
       .feedback-input {
       color: #4c4c4c;
       font-family: 'Roboto', sans-serif;
-      /*font-weight: bold;*/
       font-size: 18px;
       border-radius: 5px;
       line-height: 32px;
       background-color: #eeeeee;
       border: solid 1px #d2d2d2;
       transition: all 0.3s;
-      /*padding: 400px;*/
       margin-bottom: 22px;
       width:100%;
       box-sizing: border-box;
       outline:0;
       padding: 2%;
-
       }
 
       .feedback-input:focus {
@@ -575,14 +507,16 @@ h3{
   flex-flow: wrap;
   overflow: hidden;
   object-fit: inherit;
+
   display: -webkit-flex;
   display: flex;
-  -webkit-flex-direction: row /* works with row or column */
-  flex-direction: row;
   -webkit-align-items: center;
-  align-items:flex-end;
+  align-items: center;
   -webkit-justify-content: center;
   justify-content: center;
+  -webkit-flex-flow: column wrap;
+  flex-flow: column wrap;
+  -webkit-align-content: center;
   align-content: center;
 }
 
@@ -598,7 +532,6 @@ h3{
   background-size: cover;
   max-width: 50%;
   padding: 5% 10% 5% 10%;
-  /*overflow: auto;*/
   font-size: 20px;
 }
 
@@ -621,7 +554,6 @@ h3{
   width: 3;
   height: 60px;
   border-radius: 50%;
-  /*background-color: red;*/
 }
 
 .circle a:not(.facebook-no) {
@@ -629,16 +561,14 @@ h3{
 }
 
 .circle-circle {
-  /*display: flex;*/
   width: 60px;
   height: 60px;
   border-radius: 50%;
   background-color: orange;
-  /*justify-content: center;*/
   align-items: center;
   display: -webkit-flex;
   display: flex;
-  -webkit-flex-direction: row /* works with row or column */
+  -webkit-flex-direction: row;å /* works with row or column */
   flex-direction: row;
   -webkit-align-items: center;
   align-items: center;
@@ -671,44 +601,16 @@ h3{
 }
 
 
-/* NAV BAR ---- When the screen is less than 680 pixels wide, hide all list items, except for the first one ("Home"). Show the list item that contains the link to open and close the topnav (li.icon) */
 
 @media screen and (max-width:1100px) {
-  /*ul.topnav li {
-    display: none;
-  }
-   li.icon {
-    float: right;
-    display: inline-block;
-  }
-  ul.topnav.responsive {
-    position: relative;
-    flex-direction: column;
-    background-color: rgba(255,255,255,0.8);
-    width: 100%;
-    margin-top: 370px;
-  }
 
-  #header-title {
-  position: absolute;
-  margin-top: 0px;
-  }
-  ul.topnav.responsive li.icon {
-   position: absolute;
-   right: 0;
-   top: 0;
- }
- ul.topnav.responsive li {
-   float: none;
-   display: inline;
- }
- ul.topnav.responsive li a {
-   display: block;
-   text-align: center;
- }*/
 
- .three-three {
-   width: 100%;
+ .three {
+   flex-direction: column;
+ }
+
+ .three-sub {
+   display: none;
  }
 
 .four, .six, .eight, .nine, .eleven {
@@ -721,9 +623,48 @@ h3{
    padding: 5% 10% 5% 10%;
  }
 
-
+ .eight form{
+   width: 100%;
  }
+
+ .circle {
+   -webkit-justify-content: center;
+   justify-content: center;
+ }
+
+.twelve {
+  width: 100%;
+  height: 300px;
 }
 
 
+
+}
+
+@media screen and (max-width:700px) {
+.one-text {
+  padding: 20% 10% 5% 10%;
+}
+
+.one-text p {
+  text-align: center;
+}
+
+.one-text, .two, .four, .six, .eight, .nine, .eleven {
+   display: -webkit-flex;
+   display: flex;
+   -webkit-flex-direction: column;
+   flex-direction: column;
+   -webkit-align-items: center;
+   align-items: center;
+   -webkit-justify-content: center;
+   justify-content: center;
+   text-align: center;
+}
+
+.one-text p {
+    font-size: 34px;
+}
+
+}
 </style>
