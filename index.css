@@ -51,7 +51,7 @@ header {
   user-select: none;
   max-width: 1300px;
   top: 0;
-  /*background-color: red;*/
+  position: fixed;
 }
 
 .logo img {
