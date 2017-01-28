@@ -46,15 +46,27 @@ img {
 }
 
 header {
-  padding: 16px 10% 8px 0;
+  padding: 16px 5% 8px 10%;
   /*margin-left: 10%;*/
-  /*margin-right: 10%;*/
+  margin-right: 10%;
   user-select: none;
-  max-width: 1300px;
+  max-width: 1600px;
   top: 0;
   width: 100%;
   position: fixed;
-  content: border-box;
+  box-sizing: border-box;
+  transition: top .5s ease-in-out;
+  /*background-color: red;*/
+}
+
+.semi-opaque {
+  background-color: rgba(0, 0, 0, 0.79);
+  border-bottom: grey;
+  transition: 1s ease;
+}
+
+.nav-up {
+  top: -500px; // same as header height. use variables in LESS/SASS
 }
 
 .logo img {
@@ -103,7 +115,7 @@ header nav a:not(:last-child) {
     left: 0;
     z-index: 1;
     width: 100%;
-    background: #777;
+    background: rgba(0, 0, 0, 0.79);
     padding: 20px 0;
     opacity: 0;
     visibility: hidden;
