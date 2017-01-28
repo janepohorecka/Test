@@ -49,9 +49,11 @@ header {
   padding: 16px 5% 8px 0;
   margin-left: 10%;
   user-select: none;
-  max-width: 1300px;
+  /*max-width: 1300px;*/
   top: 0;
+  width: 100%;
   position: fixed;
+
 }
 
 .logo img {
