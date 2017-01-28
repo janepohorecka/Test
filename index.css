@@ -46,20 +46,22 @@ img {
 }
 
 header {
-  padding: 16px 5% 8px 0;
-  margin-left: 10%;
+  padding: 16px 10% 8px 0;
+  /*margin-left: 10%;*/
+  /*margin-right: 10%;*/
   user-select: none;
-  /*max-width: 1300px;*/
+  max-width: 1300px;
   top: 0;
   width: 100%;
   position: fixed;
-
+  content: border-box;
 }
 
 .logo img {
   max-height: 68px;
   padding-right: 15px;
-
+  /*padding-left: 10%;*/
+  /*background-color: red;*/
 }
 
 .logo h2 {
